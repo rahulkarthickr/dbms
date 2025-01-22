@@ -148,5 +148,3 @@
 - For example, let's consider a scenario of movie ticket booking for 4 persons
 - It should be done in a way that either all four of the tickets should be booked and charged for that
 - Or it should be done at all i.e., the process should not be initiated at all
-
-- 
