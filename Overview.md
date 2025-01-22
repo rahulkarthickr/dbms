@@ -140,3 +140,13 @@
 - Has unstructured or semi-structured database
 - We can also enforce schema in a NoSQL database but generally we don't do it
 - Used in very large distributed systems where it has too unstructed, unrelated, missing data 
+
+### Transcation
+
+- A transcation should be done either completely or should not be started at all
+- Any process i.e., transcation or operation should not be done partially
+- For example, let's consider a scenario of movie ticket booking for 4 persons
+- It should be done in a way that either all four of the tickets should be booked and charged for that
+- Or it should be done at all i.e., the process should not be initiated at all
+
+- 
