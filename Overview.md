@@ -122,3 +122,21 @@
 ![3NF-1](/Diagram/3NF-1.png)
 
 ![3NF-2](/Diagram/3NF-2.png)
+
+### Denormalization
+
+- Denormalization is simply the opposite of Normalization
+- In normalization, we spilt the single table into multiple tables to avoid combining of duplicating elements
+- Whereas in denormalization, we combine multiple tables into a single table
+- Example for denormalization is creating a playlist in a music app which has multiple tables connected to a single playlist table
+
+### RDBMS
+
+- Has only structured database
+- Can query using SQL language
+
+### NoSQL
+
+- Has unstructured or semi-structured database
+- We can also enforce schema in a NoSQL database but generally we don't do it
+- Used in very large distributed systems where it has too unstructed, unrelated, missing data 
