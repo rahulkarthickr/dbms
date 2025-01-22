@@ -157,4 +157,25 @@
 - This called as **Row-level Locking**. Once after booking, if the booking is failed, that same row is accessible for booking
 - If booking is succeeded, cancelling or refunding and other transcations are done seperately
 - **Page-level Locking** is the same as **Row-level Locking**
-- But the difference here is we lock a set of rows in a table or rows in a set of tables 
+- But the difference here is we lock a set of rows in a table or rows in a set of tables
+- Lokcing is of two types:
+  
+  - Optimistic Locking
+  - Pessimistic Locking
+
+#### Pessimistic Locikng
+
+- Pessimistic locking is the locking that is enabled whenever we try to access data
+- Once after completing any transcation with data, the lock is released to avoid errors
+
+#### Optimistic Locking
+
+- Optimistic locking is the kind of locking which checks for errors at the end of any transcation
+- If errros are present, it rollbacks to the previous state. If no errors present, it commits that state
+- But this kind of locking creates frequent update in data ultimately resulting inconsistency of data
+- The important keywords here are **BEGIN, COMMIT, ROLLBACK**
+
+### Deadlock
+
+- Once when two or more transcation block each other by holding resources the other needs
+- Use a timeout or a wait-for-graph to prevent deadlock
