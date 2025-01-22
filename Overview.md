@@ -102,14 +102,19 @@
 - 5NF (PJNF)
 - 6NF (DKNF)
 
-#### 1NF (First Normalization Form)
+#### 1NF 
 
 - In this form, every value should be a single element in a single entire column or in a single entire row
 - Values should not be comma seperated values like list or tuples
 
-#### 2NF (Second Normalization Form)
+#### 2NF 
 
 - In this form, a non-key attribute should not depend on another non key attribute
 - A non-key attribute should always depend on a key attribute
 
 ![2NF](/Diagram/2NF.png)
+
+#### 3NF 
+
+- The main aim in this form is to remove transitive dependency
+- Transitive dependency is one duplicating element should identify another duplicating element
