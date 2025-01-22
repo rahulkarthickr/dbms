@@ -152,7 +152,7 @@
 ### Concurrency Control
 
 - Executing a single transcation at a time will increase the waiting time of other transcations which will result in delay of the overall execution
-- Hence for increasing the overall throughput and efficiency of the system, several transcations are executed and locking mechanisms are used
+- Hence for increasing the overall throughput and efficiency of the system, several transcations and locking mechanisms are executed
 - For example, During the booking time, the tickets of a particular row are locked so that no others cannot book that same row tickets
 - This called as **Row-level Locking**. Once after booking, if the booking is failed, that same row is accessible for booking
 - If booking is succeeded, cancelling or refunding and other transcations are done seperately
