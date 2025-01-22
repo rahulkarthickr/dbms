@@ -148,3 +148,13 @@
 - For example, let's consider a scenario of movie ticket booking for 4 persons
 - It should be done in a way that either all four of the tickets should be booked and charged for that
 - Or it should be done at all i.e., the process should not be initiated at all
+
+### Concurrency Control
+
+- Executing a single transcation at a time will increase the waiting time of other transcations which will result in delay of the overall execution
+- Hence for increasing the overall throughput and efficiency of the system, several transcations are executed and locking mechanisms are used
+- For example, During the booking time, the tickets of a particular row are locked so that no others cannot book that same row tickets
+- This called as **Row-level Locking**. Once after booking, if the booking is failed, that same row is accessible for booking
+- If booking is succeeded, cancelling or refunding and other transcations are done seperately
+- **Page-level Locking** is the same as **Row-level Locking**
+- But the difference here is we lock a set of rows in a table or rows in a set of tables 
