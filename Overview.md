@@ -52,7 +52,7 @@
 - Let's say we have booked 10 tickets after that the completion of booking process,
 - It should not show that the tickets have not been booked once refreshing the screen
 
-### Normalization 
+### Normalization
 
 #### Primary Key
 
@@ -102,19 +102,23 @@
 - 5NF (PJNF)
 - 6NF (DKNF)
 
-#### 1NF 
+#### 1NF
 
 - In this form, every value should be a single element in a single entire column or in a single entire row
 - Values should not be comma seperated values like list or tuples
 
-#### 2NF 
+#### 2NF
 
 - In this form, a non-key attribute should not depend on another non key attribute
 - A non-key attribute should always depend on a key attribute
 
 ![2NF](/Diagram/2NF.png)
 
-#### 3NF 
+#### 3NF
 
 - The main aim in this form is to remove transitive dependency
 - One duplicating element should not identify another duplicating element
+
+![3NF-1](/Diagram/3NF-1.png)
+
+![3NF-2](/Diagram/3NF-2.png)
