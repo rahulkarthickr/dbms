@@ -117,4 +117,4 @@
 #### 3NF 
 
 - The main aim in this form is to remove transitive dependency
-- Transitive dependency is one duplicating element should identify another duplicating element
+- One duplicating element should not identify another duplicating element
