@@ -112,4 +112,4 @@
 - In this form, a non-key attribute should not depend on another non key attribute
 - A non-key attribute should always depend on a key attribute
 
-- ![2NF](/Diagram/2NF.png)
+![2NF](/Diagram/2NF.png)
