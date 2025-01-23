@@ -84,13 +84,51 @@
 - **ONDELETE NULL** is a similar case in which the entity in parent table when gets deleted, the connected entities in child table becomes NULL
 - Both **ONDELETE CASCADE** and **ONDELETE NULL** becomes useful when we are using both **PRIMARY KEY** and **FOREIGN KEY** together
 
-#### CANDITATE KEY
+#### CANDIDATE KEY
 
-- Combination of two or more fields as a KEY
-- If two or more rows and columns that can be uniquely identified means that is called **CANDITATE KEY**
-- For example, let's say we are creating new mail-ids using an existing single mail-id
-- And the condition is kept as phone number should be unique, then we can club email-id and phone number to uniquely identify users
-- That is called as **CANDITATE KEY**
+- A **Candidate Key** is a minimal set of attributes that uniquely identifies a row in a table
+- There can be multiple candidate keys in a table, but only one is chosen as the **Primary Key**
+- **Key Points**:
+  
+  - Must be unique
+  - Cannot have redundant attributes (minimal)
+  - A table can have more than one Candidate Key
+  - It can consist of a single attribute or multiple attributes
+
+- **Example**:
+  
+  Table: `Students`
+
+  | StudentID | Email            | Name        | Phone     |  
+  |-----------|------------------|-------------|-----------|  
+  | 101       | john@gmail.com   | John        | 987654321 |  
+  | 102       | mary@gmail.com   | Mary        | 876543210 |  
+
+- In this table, `StudentID` and `Email` are **Candidate Keys** because both uniquely identify each student
+- However, only one can be selected as the **Primary Key**
+
+#### COMPOSITE KEY
+
+- A **Composite Key** is a Candidate Key that consists of two or more attributes (columns) that together uniquely identify a row in a table
+- No single attribute in the composite key can uniquely identify the row by itself
+- **Key Points**:
+  
+  - A type of Candidate Key
+  - Requires a combination of multiple attributes to ensure uniqueness
+  - Often used in **junction tables** (many-to-many relationships)
+
+- **Example**:
+  
+  Table: `StudentCourses` (junction table between `Students` and `Courses`)
+
+  | StudentID | CourseID | EnrollmentDate |  
+  |-----------|----------|----------------|  
+  | 101       | CSE101   | 2025-01-10     |  
+  | 101       | CSE102   | 2025-01-12     |  
+  | 102       | CSE101   | 2025-01-11     |  
+
+- In this table, Neither `StudentID` nor `CourseID` alone can uniquely identify a row.
+- **`(StudentID, CourseID)` together form a Composite Key**, as their combination uniquely identifies each record.
 
 ### Types of Normalization
 
