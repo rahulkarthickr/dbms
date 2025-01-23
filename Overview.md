@@ -164,6 +164,7 @@
 ### Denormalization
 
 - Denormalization is simply the opposite of Normalization
+- This processm is done often in NoSQL for optimization
 - In normalization, we spilt the single table into multiple tables to avoid combining of duplicating elements
 - Whereas in denormalization, we combine multiple tables into a single table
 - Example for denormalization is creating a playlist in a music app which has multiple tables connected to a single playlist table
