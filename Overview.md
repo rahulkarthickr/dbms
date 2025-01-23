@@ -179,3 +179,11 @@
 
 - Once when two or more transcation block each other by holding resources the other needs
 - Use a timeout or a wait-for-graph to prevent deadlock
+
+### Indexing
+
+- If we want to take a single piece of data in a collection of data
+- Using indexing, we can take that particular data within seconds but that indexing process takes time
+- We don't need to traverse the entire collection of data to get that particular data
+- The usecase of indexing comes in handy when a user requests for a particular data
+- And we can give it in seconds by already indexing the data elements
