@@ -187,3 +187,30 @@
 - We don't need to traverse the entire collection of data to get that particular data
 - The usecase of indexing comes in handy when a user requests for a particular data
 - And we can give it in seconds by already indexing the data elements
+- There are two types of indexing:
+  
+  - Clustered Indexing
+  - Non-Clustered Indexing
+
+#### Clustered Indexing
+
+- Clustered Indexing is simply the arranging of rows in a table in random manner
+- Clustered Indexing is prefered whenever we want to get the data fastly rather than sorting and other related processes 
+  
+#### Non-Clustered Indexing
+
+- Non-clustered indexing involves a seperate structure which points to the actual data
+- It is simply like a Hashmap or Hashtable which is a seperate structure pointing to the actual data
+- Whenever sorting is done, **Non-Clustered Indexing** is mostly prefered
+
+- Implementation of indexing is of two types:
+
+  #### B-Tree Indexing
+  
+- Balanced Binary Trees are used to order the keys so as to access them in O(Log N) time complexity
+      
+  #### Hashing Indexing
+
+- Whenever Primary Key is given, it does some mathematical calculations which returns the memory address
+- Using that memory address, we can get the values inside that memory address
+  
