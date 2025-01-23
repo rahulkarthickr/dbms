@@ -244,14 +244,14 @@
 
 - Implementation of indexing is of two types:
 
-  #### B-Tree Indexing
+  - **B-Tree Indexing**
   
-- Balanced Binary Trees are used to order the keys so as to access them in O(Log N) time complexity
+    - Balanced Binary Trees are used to order the keys so as to access them in O(Log N) time complexity
       
-  #### Hashing Indexing
-
-- Whenever Primary Key is given, it does some mathematical calculations which returns the memory address
-- Using that memory address, we can get the values inside that memory address
+  - **Hashing Indexing**
+    
+    - Whenever Primary Key is given, it does some mathematical calculations which returns the memory address
+    - Using that memory address, we can get the values inside that memory address
   
 ### Stored Procedure
 
