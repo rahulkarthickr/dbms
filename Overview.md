@@ -164,7 +164,7 @@
 ### Denormalization
 
 - Denormalization is simply the opposite of Normalization
-- This processm is done often in NoSQL for optimization
+- This process is done often in NoSQL for optimization
 - In normalization, we spilt the single table into multiple tables to avoid combining of duplicating elements
 - Whereas in denormalization, we combine multiple tables into a single table
 - Example for denormalization is creating a playlist in a music app which has multiple tables connected to a single playlist table
@@ -252,4 +252,29 @@
 
 - Whenever Primary Key is given, it does some mathematical calculations which returns the memory address
 - Using that memory address, we can get the values inside that memory address
+  
+### Stored Procedure
+
+- Stored Procedure is using of the pre-compiled SQL for carrying out repeated operations
+- It is similar to functions in various other programming languages
+
+### TRIGGER
+
+- **TRIGGER** is used when we want to trigger one operation while performing another operation
+- For example, whenever we are ordering food means the notification table should be called automatically
+
+### VIEW 
+
+- **VIEW** is a kind of virtual table and it is used for performing complex queries 
+- Whenever we are performing SQL queries and we want to access the result often means we can store it in a **VIEW**
+
+### Peformance Tuning
+
+- Performance tuning can be done by
+  
+  - Query Optimization
+  - Database Sharding
+  - CAP Theorem 
+  - Indexing
+  - Caching
   
