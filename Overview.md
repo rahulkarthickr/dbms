@@ -202,7 +202,7 @@
   - Optimistic Locking
   - Pessimistic Locking
 
-#### Pessimistic Locikng
+#### Pessimistic Locking
 
 - Pessimistic locking is the locking that is enabled whenever we try to access data
 - Once after completing any transcation with data, the lock is released to avoid errors
@@ -241,7 +241,6 @@
 - Non-clustered indexing involves a seperate structure which points to the actual data
 - It is simply like a Hashmap or Hashtable which is a seperate structure pointing to the actual data
 - Whenever sorting is done, **Non-Clustered Indexing** is mostly prefered
-
 - Implementation of indexing is of two types:
 
   - **B-Tree Indexing**
